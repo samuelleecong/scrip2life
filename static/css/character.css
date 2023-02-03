@@ -1,0 +1,259 @@
+/* Body and general layout styles */
+body {
+  background-color: #f8f9fa;
+/*   font-family: Arial, sans-serif; */
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+/*   font-size: 18px; */
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-items: center;
+  height: 100vh;
+} */
+main {
+  height: auto;
+}
+
+.card {
+  width: 25%;
+  height: 400px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #ccc;;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 60px;
+  transition: all 0.2s ease-in-out;
+/*   padding:10px; */
+}
+
+
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px #ccc;
+}
+
+.card h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* .card-body {
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+} */
+
+.card img {
+  
+  width: 95px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.profile-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 50%;
+/*   border: solid black 2px; */
+  
+}
+
+/* .card h3 {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+  padding : 0px;
+  font-size: 35px;
+}
+
+.card p {
+  text-align: center;
+  padding: 0 10px;
+  overflow-y: hidden;
+  height: 150px;
+} */
+.card h3 {
+  text-align: center;
+  font-weight: bold;
+  margin: 30px 0;
+  padding : 0px;
+  font-size: 42px;
+}
+
+.card p {
+  text-align: start;
+  padding: 0 30px;
+  overflow-y: scroll;
+  height: 222px;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: #333;
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+  padding: 40px;
+}
+
+/*  text-align: center; */
+  
+/* For Spinner */
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.card {
+  width: 25%;
+  height: 400px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #ccc;;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+#myModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 65%;
+  overflow-y: scroll;
+}
+
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#readMore {
+  margin-left: 235px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 17px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#readMore:hover {
+  background-color: #0069d9;
+}
