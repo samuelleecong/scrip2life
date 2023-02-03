@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+  <!--   Spinner HTML -->
+<!--   <div id="loading">
+    <div class="spinner"></div>
+  </div> -->
+  
+<!--   Navbar -->
+<header>
+  <h1>Scrip2Life</h1>
+<!--   <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Summary</a></li>
+    <li><a href="#">Traits</a></li>
+    <li><a href="#">Backstory</a></li>
+  </ul> -->
+</header>
+<!--   <div class="loading">
+  <div class="loading-spinner"></div>
+</div> -->
+  <h2>Upload a Script File</h2>
+<!--         <p>
+        This project is about creating a web app for people in the film production industry to express a deeper character and story.
+
+We use AI to help the film industry tell better stories. 
+
+Users upload a film script file, and we
+1. summarize the scenes
+2. extract the characters and their personality traits
+3. generate compelling backstories
+4. generate images of the backstory [backlogged]
+      </p> -->
+    <main>
+      <section class="card">
+        <form  action = "/process_form" method="post"  enctype="multipart/form-data" >
+          
+          <label class="heading">Select a file</label>
+          <input type="file" id="fileInput" name="file">
+          
+          <label for="selectOption" class="heading">Select an option:</label>
+          <select id="selectOption"  name="option" class="selector">
+            <option value="1">Summary</option>
+            <option value="2">Characters</option>
+            <option value="3">Backstories</option>
+          </select>
+          <button type="submit" value="Submit" id="submit-button">Submit</button>
+<!--           <input type="submit" value="Submit"> -->
+        </form>
+         
+      </section>
+    </main>
+    <div class="loading">
+  <div class="loading-spinner"></div>
+</div>
+
+
+    <footer>
+      <p>Copyright © 2023 Scrip2Life</p>
+    </footer>
+<!--     <div id="loading">Loading...</div> -->
+
+  
+  
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blurple" defer></script>
+</body>
+
+</html>
